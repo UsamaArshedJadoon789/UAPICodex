@@ -1,0 +1,9 @@
+HTTP/2 200 
+content-length: 55761
+content-type: text/html
+last-modified: Mon, 21 Jul 2025 10:10:44 GMT
+accept-ranges: bytes
+etag: "0aa48b827fadb1:0"
+server: Microsoft-IIS/10.0
+date: Sun, 27 Jul 2025 18:43:48 GMT
+

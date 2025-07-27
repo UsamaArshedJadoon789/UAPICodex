@@ -1,0 +1,5 @@
+Sun Jul 27 06:43:48 PM UTC 2025: [FAIL] HSTS Header: Missing Strict-Transport-Security header
+Sun Jul 27 06:43:48 PM UTC 2025: [FAIL] X-Frame-Options: Missing X-Frame-Options header (clickjacking protection)
+Sun Jul 27 06:43:48 PM UTC 2025: [FAIL] X-Content-Type-Options: Missing X-Content-Type-Options header
+Sun Jul 27 06:43:48 PM UTC 2025: [FAIL] CSP Header: Missing Content-Security-Policy header
+Sun Jul 27 06:43:48 PM UTC 2025: [WARNING] Server Header: Server information disclosed: server: Microsoft-IIS/10.0
