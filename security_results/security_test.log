@@ -3,3 +3,39 @@ Sun Jul 27 06:43:48 PM UTC 2025: [FAIL] X-Frame-Options: Missing X-Frame-Options
 Sun Jul 27 06:43:48 PM UTC 2025: [FAIL] X-Content-Type-Options: Missing X-Content-Type-Options header
 Sun Jul 27 06:43:48 PM UTC 2025: [FAIL] CSP Header: Missing Content-Security-Policy header
 Sun Jul 27 06:43:48 PM UTC 2025: [WARNING] Server Header: Server information disclosed: server: Microsoft-IIS/10.0
+Sun Jul 27 06:44:04 PM UTC 2025: [FAIL] HSTS Header: Missing Strict-Transport-Security header
+Sun Jul 27 06:44:04 PM UTC 2025: [FAIL] X-Frame-Options: Missing X-Frame-Options header (clickjacking protection)
+Sun Jul 27 06:44:04 PM UTC 2025: [FAIL] X-Content-Type-Options: Missing X-Content-Type-Options header
+Sun Jul 27 06:44:04 PM UTC 2025: [FAIL] CSP Header: Missing Content-Security-Policy header
+Sun Jul 27 06:44:04 PM UTC 2025: [WARNING] Server Header: Server information disclosed: server: Microsoft-IIS/10.0
+Sun Jul 27 06:44:14 PM UTC 2025: [PASS] HTTPS Redirect: HTTP connection refused (good security practice)
+Sun Jul 27 06:44:15 PM UTC 2025: [WARNING] Path Discovery: /robots.txt: Accessible (Status: 200)
+Sun Jul 27 06:44:16 PM UTC 2025: [WARNING] Path Discovery: /.well-known/security.txt: Accessible (Status: 200)
+Sun Jul 27 06:44:17 PM UTC 2025: [WARNING] Path Discovery: /sitemap.xml: Accessible (Status: 200)
+Sun Jul 27 06:44:19 PM UTC 2025: [WARNING] Path Discovery: /admin: Accessible (Status: 200)
+Sun Jul 27 06:44:20 PM UTC 2025: [WARNING] Path Discovery: /api: Accessible (Status: 200)
+Sun Jul 27 06:44:21 PM UTC 2025: [WARNING] Path Discovery: /swagger: Accessible (Status: 200)
+Sun Jul 27 06:44:22 PM UTC 2025: [WARNING] Path Discovery: /docs: Accessible (Status: 200)
+Sun Jul 27 06:44:23 PM UTC 2025: [WARNING] Path Discovery: /.git/: Accessible (Status: 200)
+Sun Jul 27 06:44:25 PM UTC 2025: [WARNING] Path Discovery: /wp-admin: Accessible (Status: 200)
+Sun Jul 27 06:44:26 PM UTC 2025: [WARNING] Path Discovery: /phpmyadmin: Accessible (Status: 200)
+Sun Jul 27 06:44:27 PM UTC 2025: [WARNING] Path Discovery: /adminer: Accessible (Status: 200)
+Sun Jul 27 06:44:28 PM UTC 2025: [WARNING] Path Discovery: /config: Accessible (Status: 200)
+Sun Jul 27 06:44:30 PM UTC 2025: [WARNING] Path Discovery: /.env: Accessible (Status: 200)
+Sun Jul 27 06:44:31 PM UTC 2025: [FAIL] Authentication Test: Login failed with status: 405
+Sun Jul 27 06:44:31 PM UTC 2025: [FAIL] Cookie Security: Missing Secure flag on cookies
+Sun Jul 27 06:44:31 PM UTC 2025: [FAIL] Cookie HTTPOnly: Missing HTTPOnly flag on cookies
+Sun Jul 27 06:44:31 PM UTC 2025: [WARNING] Cookie SameSite: Missing SameSite attribute on cookies
+Sun Jul 27 06:44:32 PM UTC 2025: [PASS] SQL Injection: No SQL error with payload: ' OR '1'='1...
+Sun Jul 27 06:44:32 PM UTC 2025: [PASS] SQL Injection: No SQL error with payload: admin'--...
+Sun Jul 27 06:44:33 PM UTC 2025: [PASS] SQL Injection: No SQL error with payload: ' UNION SELECT NULL-...
+Sun Jul 27 06:44:34 PM UTC 2025: [PASS] SQL Injection: No SQL error with payload: 1' OR '1'='1' /*...
+Sun Jul 27 06:44:34 PM UTC 2025: [PASS] XSS: No XSS reflection with payload: <script>alert('XSS')...
+Sun Jul 27 06:44:35 PM UTC 2025: [PASS] XSS: No XSS reflection with payload: <img src=x onerror=a...
+Sun Jul 27 06:44:36 PM UTC 2025: [PASS] XSS: No XSS reflection with payload: javascript:alert('XS...
+Sun Jul 27 06:44:44 PM UTC 2025: [FAIL] Rate Limiting: No rate limiting detected in 10 rapid requests
+Sun Jul 27 06:44:45 PM UTC 2025: [WARNING] CSRF Protection: No obvious CSRF protection detected
+Sun Jul 27 06:44:46 PM UTC 2025: [WARNING] Error Handling: Verbose error messages detected with: username=AAAAAAAAAAAAAAAAAAAAA...
+Sun Jul 27 06:44:46 PM UTC 2025: [WARNING] Error Handling: Verbose error messages detected with: password=BBBBBBBBBBBBBBBBBBBBB...
+Sun Jul 27 06:44:47 PM UTC 2025: [WARNING] Error Handling: Verbose error messages detected with: username=...
+Sun Jul 27 06:44:48 PM UTC 2025: [SUCCESS] Post-Auth Access: Successfully accessed dashboard with session
