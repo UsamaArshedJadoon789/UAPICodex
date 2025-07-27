@@ -1,0 +1,110 @@
+{
+  "target": "https://sandbox.contracts.com.sa",
+  "timestamp": "2025-07-27T19:25:57.631437",
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 2,
+    "MEDIUM": 6,
+    "LOW": 4,
+    "INFO": 0
+  },
+  "total_findings": 12,
+  "findings": [
+    {
+      "timestamp": "2025-07-27T19:25:30.098134",
+      "test": "Missing HSTS Header",
+      "severity": "MEDIUM",
+      "description": "Strict-Transport-Security header is missing",
+      "evidence": "HSTS not implemented",
+      "recommendation": "Add HSTS header: Strict-Transport-Security: max-age=31536000; includeSubDomains"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:31.280596",
+      "test": "Missing X-Frame-Options",
+      "severity": "HIGH",
+      "description": "Security header X-Frame-Options is missing - Prevent clickjacking attacks",
+      "evidence": "Header not found in response",
+      "recommendation": "Add X-Frame-Options: DENY or SAMEORIGIN"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:31.280622",
+      "test": "Missing X-Content-Type-Options",
+      "severity": "MEDIUM",
+      "description": "Security header X-Content-Type-Options is missing - Prevent MIME type sniffing",
+      "evidence": "Header not found in response",
+      "recommendation": "Add X-Content-Type-Options: nosniff"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:31.280628",
+      "test": "Missing Content-Security-Policy",
+      "severity": "HIGH",
+      "description": "Security header Content-Security-Policy is missing - Prevent XSS and code injection",
+      "evidence": "Header not found in response",
+      "recommendation": "Implement CSP: Content-Security-Policy: default-src 'self'"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:31.280633",
+      "test": "Missing X-XSS-Protection",
+      "severity": "LOW",
+      "description": "Security header X-XSS-Protection is missing - Enable XSS filtering in browsers",
+      "evidence": "Header not found in response",
+      "recommendation": "Add X-XSS-Protection: 1; mode=block"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:31.280637",
+      "test": "Missing Referrer-Policy",
+      "severity": "LOW",
+      "description": "Security header Referrer-Policy is missing - Control referrer information",
+      "evidence": "Header not found in response",
+      "recommendation": "Add Referrer-Policy: strict-origin-when-cross-origin"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:31.280641",
+      "test": "Missing Permissions-Policy",
+      "severity": "LOW",
+      "description": "Security header Permissions-Policy is missing - Control browser features",
+      "evidence": "Header not found in response",
+      "recommendation": "Add Permissions-Policy to control feature access"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:31.280646",
+      "test": "Server Information Disclosure",
+      "severity": "LOW",
+      "description": "Server version information disclosed in headers",
+      "evidence": "Server: Microsoft-IIS/10.0",
+      "recommendation": "Remove or mask server version information"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:32.467460",
+      "test": "Missing CSRF Protection",
+      "severity": "MEDIUM",
+      "description": "Login form appears to lack CSRF protection",
+      "evidence": "No CSRF tokens found in login form",
+      "recommendation": "Implement CSRF tokens in all forms"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:51.905133",
+      "test": "No Rate Limiting",
+      "severity": "MEDIUM",
+      "description": "Login endpoint lacks rate limiting protection",
+      "evidence": "10 login attempts without rate limiting",
+      "recommendation": "Implement rate limiting and account lockout"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:53.080751",
+      "test": "Information Disclosure",
+      "severity": "MEDIUM",
+      "description": "Sensitive file accessible: /robots.txt",
+      "evidence": "Status: 200, Size: 55761",
+      "recommendation": "Restrict access to /robots.txt or remove if not needed"
+    },
+    {
+      "timestamp": "2025-07-27T19:25:53.247987",
+      "test": "Information Disclosure",
+      "severity": "MEDIUM",
+      "description": "Sensitive file accessible: /sitemap.xml",
+      "evidence": "Status: 200, Size: 55761",
+      "recommendation": "Restrict access to /sitemap.xml or remove if not needed"
+    }
+  ]
+}

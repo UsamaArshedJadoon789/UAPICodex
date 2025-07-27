@@ -1,0 +1,22 @@
+{
+  "target": "https://sandbox.contracts.com.sa",
+  "timestamp": "2025-07-27T19:27:49.471421",
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "total_vulnerabilities": 1,
+  "vulnerabilities": [
+    {
+      "timestamp": "2025-07-27T19:27:40.428916",
+      "type": "Angular Template Injection",
+      "severity": "HIGH",
+      "description": "Angular template injection detected - expression evaluated",
+      "proof_of_concept": "Payload: {{7*7}} -> Result: 49",
+      "impact": "Potential for client-side code execution"
+    }
+  ]
+}
