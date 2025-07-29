@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.playwright/
+__pycache__/
+.pytest_cache/
