@@ -1,0 +1,22 @@
+{
+  "name": "uapicodex",
+  "version": "1.0.0",
+  "description": "This repository contains automation scripts using Playwright.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "pretest": "npx playwright install --with-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@playwright/test": "^1.54.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
